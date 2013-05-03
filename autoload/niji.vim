@@ -62,11 +62,6 @@ else
 endif
 
 function! niji#load()
-	" Is this necesary? Does lisp_rainbow conflict?
-	if !exists('g:niji_disable_lisp_rainbow')
-		let g:lisp_rainbow = 0
-	endif
-
 	if count(s:matching_filetypes, &ft) > 0
 		for character in s:matching_characters
 			for each in range(1, len(s:current_colour_set))
