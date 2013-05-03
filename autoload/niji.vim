@@ -2,12 +2,10 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 let s:matching_filetypes = ['lisp', 'scheme', 'clojure']
-let s:matching_filetypes = exists('g:niji_matching_filetypes') ? g:niji_matching_filetypes : s:matching_filetypes
 
 let s:matching_characters = [['(', ')'],
                            \ ['\[', '\]'],
                            \ ['{', '}']]
-let s:matching_characters = exists('g:niji_matching_characters') ? g:niji_matching_characters : s:matching_characters
 
 let s:dark_colours = [['red', 'red1'],
                     \ ['yellow', 'orange1'],
@@ -19,8 +17,6 @@ let s:dark_colours = [['red', 'red1'],
                     \ ['green', 'slateblue1'],
                     \ ['cyan', 'magenta1'],
                     \ ['magenta', 'purple1']]
-let s:dark_colours = exists('g:niji_dark_colours') ? g:niji_dark_colours : s:dark_colours
-call reverse(s:dark_colours)
 
 let s:light_colours = [['red', 'red3'],
                           \ ['darkyellow', 'orangered3'],
@@ -32,7 +28,13 @@ let s:light_colours = [['red', 'red3'],
                           \ ['darkgreen', 'deepskyblue4'],
                           \ ['blue', 'darkslateblue'],
                           \ ['darkmagenta', 'darkviolet']]
+
+let s:matching_filetypes = exists('g:niji_matching_filetypes') ? g:niji_matching_filetypes : s:matching_filetypes
+let s:matching_characters = exists('g:niji_matching_characters') ? g:niji_matching_characters : s:matching_characters
+let s:dark_colours = exists('g:niji_dark_colours') ? g:niji_dark_colours : s:dark_colours
 let s:light_colours = exists('g:niji_light_colours') ? g:niji_light_colours : s:light_colours
+
+call reverse(s:dark_colours)
 call reverse(s:light_colours)
 
 let s:current_colour_set = &bg == 'dark' ? s:dark_colours : s:light_colours
