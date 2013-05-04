@@ -18,4 +18,13 @@ if exists("g:loaded_niji")
 endif
 let g:loaded_niji = 1
 
-autocmd BufReadPost * nested call niji#load()
+let s:matching_filetypes = ['lisp', 'scheme', 'clojure']
+let s:matching_filetypes = exists('g:niji_matching_filetypes') ? g:niji_matching_filetypes : s:matching_filetypes
+
+function s:load()
+	if count(s:matching_filetypes, &ft) > 0
+		call niji#highlight()
+	endif
+endfunction
+
+autocmd BufReadPost * nested call s:load()
