@@ -32,9 +32,9 @@
 
 FRONT MATTER                                             *niji-front-matter*
 
-    Maintainer: Alastair Touw <alastair@touw.me.uk>
-    License: Public domain.
-    Version: 1.0.0
+     Maintainer: Alastair Touw <alastair@touw.me.uk>
+        License: Distributed under the same terms as Vim. See |license|.
+        Version: 1.0.0
     Last Change: 2013 May 4
 
 
