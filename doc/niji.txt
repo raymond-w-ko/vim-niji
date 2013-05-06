@@ -84,15 +84,16 @@ Niji also takes its colour scheme from the Lisp syntax file provided in
 distributions of Vim and written by Dr. Charles E. Campbell, Jr.
 (http://mysite.verizon.net/astronaut/vim/index.html#vimlinks_syntax).
 
-    o    `Niji` by Alastair Touw,
+         `Niji` by Alastair Touw
+    o    May 6, 2013.
     |    (http://github.com/amdt/vim-niji)
     |\
     | |  `rainbow_parentheses.vim` by 'kien'
     o |  October 12, 2011.
     | |  (https://github.com/kien/rainbow_parentheses.vim)
     | |
-    | |  `Lisp.vim` by Dr. Charles E. Campbell, Jr.
-    | o  November 16, 2010.
+    | o  `Lisp.vim` by Dr. Charles E. Campbell, Jr.
+    |    November 16, 2010.
     |
     |    `rainbow_parenthsis.vim` by Martin Krischik & Luc Hermitte
     o    May 25, 2006.
