@@ -58,10 +58,11 @@ CONTENTS                                                     *niji-contents*
       4. Configuration  . . . . . . . . . . . . . . . . |niji-configuration|
            a) 'g:loaded_niji' .     . . . . . . . . . . . .  |'loaded_niji'|
            b) 'g:niji_matching_filetypes' . . .  |'niji_matching_filetypes'|
-           c) 'g:niji_matching_characters'  . . |'niji_matching_characters'|
-           d) 'g:niji_dark_colours' & . . . . . . . .  |'niji_dark_colours'|
+           c) 'g:niji_match_all_filetypes'  . . |'niji_match_all_filetypes'|
+           d) 'g:niji_matching_characters'  . . |'niji_matching_characters'|
+           e) 'g:niji_dark_colours' & . . . . . . . .  |'niji_dark_colours'|
               'g:niji_light_colours . . . . . . . . . |'niji_light_colours'|
-           e) 'g:niji_use_kien_colours' . . . . .  |'niji_use_kien_colours'|
+           f) 'g:niji_use_kien_colours' . . . . .  |'niji_use_kien_colours'|
       5. Version History  . . . . . . . . . . . . . . |niji-version-history|
       6. Known Issues . . . . . . . . . . . . . . . . .  |niji-known-issues|
 
@@ -197,6 +198,15 @@ You can override this setting by defining your own, for example:
 >
     let g:niji_matching_filetypes = ['lisp', 'ruby', 'python']
 <
+
+
+'g:niji_match_all_filetypes'                    *'niji_match_all_filetypes'*
+
+If you want Niji to load for all filetypes, just set the following:
+>
+    let g:niji_match_all_filetypes = 1
+<
+
 
 'g:niji_matching_characters'                    *'niji_matching_characters'*
 

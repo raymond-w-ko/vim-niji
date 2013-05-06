@@ -22,7 +22,7 @@ let s:matching_filetypes = ['lisp', 'scheme', 'clojure']
 let s:matching_filetypes = exists('g:niji_matching_filetypes') ? g:niji_matching_filetypes : s:matching_filetypes
 
 function s:load()
-	if count(s:matching_filetypes, &ft) > 0
+	if count(s:matching_filetypes, &ft) > 0 || exists('g:niji_match_all_filetypes')
 		call niji#highlight()
 	endif
 endfunction
