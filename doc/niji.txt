@@ -38,44 +38,75 @@ FRONT MATTER                                             *niji-front-matter*
     Last Change: 2013 May 4
 
 
-INTRODUCTION AND USAGE                        *niji* *niji-introduction-usage*
+LICENSE                                                     *sunset-license*
 
-虹 [Niji] (Rainbow) is yet another fork of various rainbow parantheses plugins
-starting with `RainbowParenthsis.vim` by John Gilmore,
-`rainbow_parenthsis.vim` by Martin Krischik and Luc Hermitte, and
-`rainbow_parentheses.vim` by 'kien'. Further details on their lineage appears
-below in |niji-credits|. The rationale for creating yet another rainbow
-parentheses plugin is described in |niji-rationale|.
-
-
-CONTRIBUTIONS                                           *niji-contributions*
-
-If you feel that Niji can be improved, pull requests and issues are
-appreciated and humbly requested, on Github at http://github.com/amdt/vim-niji
+Niji is distributed under the same terms as Vim itself. See |license|
+for details.
 
 
 CONTENTS                                                     *niji-contents*
 
       i. Front Mattter  . . . . . . . . . . . . . . . . . |niji-font-matter|
-     ii. Introduction & Usage . . . . . . . . . .  |niji-introduction-usage|
-    iii. Contributions  . . . . . . . . . . . . . . . . |niji-contributions|
-     iv. Contents . . . . . . . . . . . . . . . . . . . . .  |niji-contents|
-      1. Installation . . . . . . . . . . . . . . . . .  |niji-installation|
+     ii. License  . . . . . . . . . . . . . . . . . . . . . . |niji-license|
+    iii. Contents . . . . . . . . . . . . . . . . . . . . .  |niji-contents|
+      1. Usage & Introduction . . . . . . . . . .  |niji-introduction-usage|
+      2. Contributions  . . . . . . . . . . . . . . . . |niji-contributions|
+      3. Installation . . . . . . . . . . . . . . . . .  |niji-installation|
            a) With a Plugin Manager . . . |niji-installation-plugin-manager|
-           b) Manually  . . . . . . . . . . . . . |niji-installation-manual|
-      2. Requirements . . . . . . . . . . . . . . . . .  |niji-requirements|
-      3. Configuration (optional) . . . . . . . . . . . |niji-configuration|
+           b) Using Vimball . . . . . . . . . .  |niji-installation-vimball|
+           c) Manually  . . . . . . . . . . . . . |niji-installation-manual|
+      4. Configuration  . . . . . . . . . . . . . . . . |niji-configuration|
            a) 'g:loaded_niji' .     . . . . . . . . . . . .  |'loaded_niji'|
            b) 'g:niji_matching_filetypes' . . .  |'niji_matching_filetypes'|
            c) 'g:niji_matching_characters'  . . |'niji_matching_characters'|
            d) 'g:niji_dark_colours' & . . . . . . . .  |'niji_dark_colours'|
               'g:niji_light_colours . . . . . . . . . |'niji_light_colours'|
            e) 'g:niji_use_kien_colours' . . . . .  |'niji_use_kien_colours'|
-      4. Rationale  . . . . . . . . . . . . . . . . . . . . |niji-rationale|
       5. Version History  . . . . . . . . . . . . . . |niji-version-history|
       6. Known Issues . . . . . . . . . . . . . . . . .  |niji-known-issues|
-      7. License  . . . . . . . . . . . . . . . . . . . . . . |niji-license|
-      8. Credits  . . . . . . . . . . . . . . . . . . . . . . |niji-credits|
+
+
+USAGE AND INTRODUCTION                        *niji* *niji-introduction-usage*
+
+虹 [Niji] (Rainbow) is yet aonther fork of John Gilmore's
+`RainbowParenthsis.vim`. It's good for Common Lisp, Scheme and Clojure -- with
+two colour schemes -- out-of-the-box. Just install, and you're good to go. The
+filetypes, matching characters and colours Niji uses are
+completely configurable.
+
+Niji builds upon the work of various rainbow parantheses plugins starting with
+`RainbowParenthsis.vim` by John Gilmore, `rainbow_parenthsis.vim` by Martin
+Krischik and Luc Hermitte, and `rainbow_parentheses.vim` by 'kien'. The figure
+below shows the rough history and project pages for these plugins.
+
+Niji also takes its colour scheme from the Lisp syntax file provided in
+distributions of Vim and written by Dr. Charles E. Campbell, Jr.
+(http://mysite.verizon.net/astronaut/vim/index.html#vimlinks_syntax).
+
+    o    `Niji` by Alastair Touw,
+    |    (http://github.com/amdt/vim-niji)
+    |\
+    | |  `rainbow_parentheses.vim` by 'kien'
+    o |  October 12, 2011.
+    | |  (https://github.com/kien/rainbow_parentheses.vim)
+    | |
+    | |  `Lisp.vim` by Dr. Charles E. Campbell, Jr.
+    | o  November 16, 2010.
+    |
+    |    `rainbow_parenthsis.vim` by Martin Krischik & Luc Hermitte
+    o    May 25, 2006.
+    |    (http://www.vim.org/scripts/script.php?script_id=1561)
+    |
+    |    `RainbowParenthsis.vim` by John Gilmore
+    o    March 5, 2005.
+         (http://www.vim.org/scripts/script.php?script_id=1230)
+
+
+CONTRIBUTIONS                                           *niji-contributions*
+
+If you feel that Niji can be improved, pull requests and issues are
+appreciated and humbly requested on its Github
+project page (http://github.com/amdt/vim-niji).
 
 
 INSTALLATION                                             *niji-installation*
@@ -107,9 +138,21 @@ for example:
     git clone git://github.com/amdt/vim-niji.git
 <
 
+Using Vimball:                                   *niji-installation-vimball*
+
+Open the Vimball with Vim. For example, from a UNIX shell you might run:
+>
+    vim vim-niji.vba
+<
+Once loaded in Vim, run the following two commands:
+>
+    :so %
+    :q
+<
+
 Manually:                                         *niji-installation-manual*
 
-Copy the files in the included zip archive into your 'runtimepath' as per the
+Copy the files in the archive into your 'runtimepath' as per the
 following figure. The directory tree for Niji is on the left, and the
 resulting tree in your own home directory on the right:
 
@@ -132,12 +175,7 @@ by typing `|:echo| |$HOME|`. You can safely discard of
 `CONTRIBUTING.markdown`, `LICENSE.markdown`, and `README.markdown`.
 
 
-REQUIREMENTS                                             *niji-requirements*
-
-    * Vim 7.3
-
-
-CONFIGURATION (OPTIONAL)                                *niji-configuration*
+CONFIGURATION                                           *niji-configuration*
 
 'g:loaded_niji'                                              *'loaded_niji'*
 
@@ -196,52 +234,24 @@ You can define as few or as many as you like, and Niji will cycle through each
 of them as the nesting of your S-expressions increases.
 
 If you want to use the same colours for both light and dark backgrounds, you
-can do the following:
+could do the following:
 >
     let g:niji_dark_colours = [['brown', 'RoyalBlue3'],
                              \ ['DarkBlue', 'SeaGreen3']]
     let g:niji_light_colours = g:niji_dark_colours
 <
 
-Note: mind the British spelling of `colour`.
+Note the British spelling of 'colour'.
 
 'g:niji_use_kien_colours'                          *'niji_use_kien_colours'*
 
 Set to a non-0 value to use the colour scheme available in 'kien's
-plugin, `rainbow_parentheses.vim`:
+`rainbow_parentheses.vim`:
 >
     let g:niji_use_kien_colours
 <
 
-Note: mind the British spelling of `colour`.
-
-
-RATIONALE                                                   *niji-rationale*
-
-There are plenty more rainbow parantheses plugins and syntax files than the
-ones I've already mentioned: why create yet another one? Whilst the plugins on
-which Niji is based are great, I had two major problems with the latest of
-them, 'kien's `rainbow_parantheses.vim`:
-
-    1. I just couldn't get it to load correctly on the right filetypes.
-    2. I didn't like its colour scheme and it doesn't provide a way to
-       change it.
-
-I feel that Niji improves on these other plugins in the following ways:
-
-    1. It loads correctly on the right filetypes. (And they're configurable!)
-    2. It uses the same colour scheme -- with light and dark background
-       variants -- that Vim's built-in rainbow parentheses for the Lisp
-       filetype syntax uses. (And it's configurable!)
-    3. It also includes 'kien's plugin's colourscheme, if you like it.
-    4. It matches parentheses ('(' & ')'), brackets ('[' & ']'), and braces
-       ('{' & '}') by default. (And they're configurable!)
-    5. The source code is really short: about half the length of this
-       documentation, and the main logic is just 23 lines of Vimscript.
-    6. It's got a Japanese name! (So 'now'!, so 'Silicon Valley startup'!)
-    7. It's got a big KANJI on the top of this document. Seriously, have you
-       see that thing? It's huge. And it's multi-colour, just like your
-       parentheses are going to be. Gorgeous!
+Note the British spelling of 'colour'.
 
 
 VERSION HISTORY                                       *niji-version-history*
@@ -255,46 +265,11 @@ Niji follows the Semantic Versioning Specification (http://semver.org)
 
 KNOWN ISSUES                                             *niji-known-issues*
 
-    * When using the default colour scheme, an extra 11th level of
-      un-highlighted parentheses appears.
+    * An extra level of un-highlighted parentheses appears.
 
-For the most up-to-date known issues (and to report your own), please see the
-issue tracker on the Github
-project page (http://github.com/amdt/vim-niji/issues).
+For up-to-date known issues (and to report your own), please see the issue
+tracker on the Github project page (http://github.com/amdt/vim-niji/issues).
 
-
-LICENSE                                                     *sunset-license*
-
-Niji is distributed under the same terms as Vim itself. See |license|
-for details.
-
-
-CREDITS                                                       *niji-credits*
-
-Niji's lineage goes something like this:
-
-    o    `Niji` by Alastair Touw,
-    |    (http://github.com/amdt/vim-niji)
-    |\
-    | |  `rainbow_parentheses.vim` by 'kien'
-    o |  October 12, 2011.
-    | |  (https://github.com/kien/rainbow_parentheses.vim)
-    | |
-    | |  `Lisp.vim` by Dr. Charles E. Campbell, Jr.
-    | o  November 16, 2010.
-    |    (http://mysite.verizon.net/astronaut/vim/index.html#vimlinks_syntax)
-    |
-    |    `rainbow_parenthsis.vim` by Martin Krischik & Luc Hermitte
-    o    May 25, 2006.
-    |    (http://www.vim.org/scripts/script.php?script_id=1561)
-    |
-    |    `RainbowParenthsis.vim` by John Gilmore
-    o    March 5, 2005.
-         (http://www.vim.org/scripts/script.php?script_id=1230)
-
-Niji also takes its colour scheme from the Lisp syntax file provided in
-distributions of Vim and written by Dr. Charles E. Campbell, Jr.
-(http://mysite.verizon.net/astronaut/vim/index.html#vimlinks_syntax).
 
                                     * * *
 
