@@ -279,10 +279,8 @@ Niji follows the Semantic Versioning Specification (http://semver.org)
 
 KNOWN ISSUES                                             *niji-known-issues*
 
-    * An extra level of un-highlighted parentheses appears.
-
-For up-to-date known issues (and to report your own), please see the issue
-tracker on the Github project page (http://github.com/amdt/vim-niji/issues).
+For known issues (and to report your own), please see the issue tracker on the
+Github project page (http://github.com/amdt/vim-niji/issues).
 
 
                                     * * *
