@@ -240,6 +240,9 @@ your own list of colours, for example:
                             \ ['darkcyan', 'RoyalBlue3']]
 <
 
+Note that your outer-most parenthesis colour comes first, and the inner-most
+parenthesis colour comes last.
+
 You can define as few or as many as you like, and Niji will cycle through each
 of them as the nesting of your S-expressions increases.
 
