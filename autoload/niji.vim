@@ -63,6 +63,10 @@ let s:matching_characters = exists('g:niji_matching_characters') ? g:niji_matchi
 let s:dark_colours = exists('g:niji_dark_colours') ? g:niji_dark_colours : s:dark_colours
 let s:light_colours = exists('g:niji_light_colours') ? g:niji_light_colours : s:light_colours
 
+call reverse(s:dark_colours)
+call reverse(s:light_colours)
+call reverse(s:kien_colours)
+
 if exists('g:niji_use_kien_colours')
 	let s:current_colour_set = s:kien_colours
 else
@@ -72,13 +76,15 @@ endif
 function! niji#highlight()
 	for character in s:matching_characters
 		for each in range(1, len(s:current_colour_set))
-			execute printf('syntax region paren%s%smatchgroup=level%s start=/%s/ end=/%s/ contains=@TOP,paren%s',
+			execute printf('syntax region paren%s matchgroup=level%s start=/%s/ end=/%s/ contains=ALLBUT,%s',
 			          \ string(each),
-			          \ each > 1 ? ' contained ' : ' ',
 			          \ string(each),
 			          \ character[0],
 			          \ character[1],
-			          \ each == len(s:current_colour_set) ? 1 : each + 1)
+			          \ join(map(filter(range(1, len(s:current_colour_set)),
+			                          \ each == 1 ? 'v:val != len(s:current_colour_set)' : 'v:val != each - 1'),
+			                   \ '"paren" . v:val'),
+			               \ ','))
 		endfor
 	endfor
 
