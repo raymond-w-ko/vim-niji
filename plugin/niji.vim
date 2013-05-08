@@ -10,6 +10,8 @@
 "
 " Niji follows the Semantic Versioning specification (http://semver.org).
 "
+" GetLatestVimScripts: 4580 20067 vim-niji
+"
 
 scriptencoding utf-8
 
