@@ -4,11 +4,13 @@
 "  Maintainer: Alastair Touw <alastair@touw.me.uk>
 "     Website: http://github.com/amdt/vim-niji
 "     License: Distributed under the same terms as Vim. See ':h license'.
-"     Version: 1.0.0
+"     Version: 1.0.1
 " Last Change: 2013 May 8
 "       Usage: See 'doc/niji.txt' or ':help niji' if installed.
 "
 " Niji follows the Semantic Versioning specification (http://semver.org).
+"
+" GetLatestVimScripts: 4580 20067 vim-niji
 "
 
 scriptencoding utf-8

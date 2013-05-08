@@ -34,7 +34,7 @@ FRONT MATTER                                             *niji-front-matter*
 
      Maintainer: Alastair Touw <alastair@touw.me.uk>
         License: Distributed under the same terms as Vim. See |license|.
-        Version: 1.0.0
+        Version: 1.0.1
     Last Change: 2013 May 8
 
 
@@ -69,7 +69,7 @@ CONTENTS                                                     *niji-contents*
 
 USAGE AND INTRODUCTION                        *niji* *niji-introduction-usage*
 
-虹 [Niji] (Rainbow) is yet aonther rainbow parentheses plugin for Vim. It’s
+虹 [Niji] (Rainbow) is yet another rainbow parentheses plugin for Vim. It’s
 good for Common Lisp, Scheme and Clojure -- with two colour schemes --
 out-of-the-box. Just install, and you’re good to go. The filetypes, matching
 characters and colours Niji uses are completely configurable.
@@ -143,7 +143,7 @@ Using Vimball:                                   *niji-installation-vimball*
 
 Open the Vimball with Vim. For example, from a UNIX shell you might run:
 >
-    vim vim-niji.vba
+    vim vim-niji.vbm
 <
 Once loaded in Vim, run the following two commands:
 >
@@ -274,6 +274,10 @@ Note the British spelling of ‘colour’.
 VERSION HISTORY                                       *niji-version-history*
 
 Niji follows the Semantic Versioning Specification (http://semver.org).
+
+1.0.1 (Sat May 4, 2013) ~
+
+    * Add |GetLatestVimScripts| support.
 
 1.0.0 (Sat May 4, 2013) ~
 
