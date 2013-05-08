@@ -42,7 +42,7 @@ let s:light_colours = [['red', 'red3'],
                           \ ['blue', 'darkslateblue'],
                           \ ['darkmagenta', 'darkviolet']]
 
-let s:kien_colours = [['brown', 'RoyalBlue3'],
+let s:legacy_colours = [['brown', 'RoyalBlue3'],
                     \ ['Darkblue', 'SeaGreen3'],
                     \ ['darkgray', 'DarkOrchid3'],
                     \ ['darkgreen', 'firebrick3'],
@@ -65,10 +65,10 @@ let s:light_colours = exists('g:niji_light_colours') ? g:niji_light_colours : s:
 
 call reverse(s:dark_colours)
 call reverse(s:light_colours)
-call reverse(s:kien_colours)
+call reverse(s:legacy_colours)
 
-if exists('g:niji_use_kien_colours')
-	let s:current_colour_set = s:kien_colours
+if exists('g:niji_use_legacy_colours')
+	let s:current_colour_set = s:legacy_colours
 else
 	let s:current_colour_set = &bg == 'dark' ? s:dark_colours : s:light_colours
 endif

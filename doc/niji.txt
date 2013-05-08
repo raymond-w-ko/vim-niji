@@ -62,7 +62,7 @@ CONTENTS                                                     *niji-contents*
            d) 'g:niji_matching_characters'  . . |'niji_matching_characters'|
            e) 'g:niji_dark_colours' & . . . . . . . .  |'niji_dark_colours'|
               'g:niji_light_colours . . . . . . . . . |'niji_light_colours'|
-           f) 'g:niji_use_kien_colours' . . . . .  |'niji_use_kien_colours'|
+           f) 'g:niji_use_legacy_colours' . . .  |'niji_use_legacy_colours'|
       5. Version History  . . . . . . . . . . . . . . |niji-version-history|
       6. Known Issues . . . . . . . . . . . . . . . . .  |niji-known-issues|
 
@@ -260,12 +260,12 @@ could do the following:
 Note the British spelling of 'colour'.
 
 
-'g:niji_use_kien_colours'                          *'niji_use_kien_colours'*
+'g:niji_use_legacy_colours'                      *'niji_use_legacy_colours'*
 
-Define this variable to use the colour scheme available in
-'kien's `rainbow_parentheses.vim`:
+Let this variable to use the colour scheme available in the rainbow
+parentheses scripts by 'kien', Martin Krischik, Luc Hermitte and John Gilmore.
 >
-    let g:niji_use_kien_colours
+    let g:niji_use_legacy_colours = 1
 <
 
 Note the British spelling of 'colour'.
