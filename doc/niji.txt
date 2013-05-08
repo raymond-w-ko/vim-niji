@@ -34,7 +34,7 @@ FRONT MATTER                                             *niji-front-matter*
 
      Maintainer: Alastair Touw <alastair@touw.me.uk>
         License: Distributed under the same terms as Vim. See |license|.
-        Version: 1.0.0
+        Version: 1.0.1
     Last Change: 2013 May 8
 
 
@@ -274,6 +274,10 @@ Note the British spelling of ‘colour’.
 VERSION HISTORY                                       *niji-version-history*
 
 Niji follows the Semantic Versioning Specification (http://semver.org).
+
+1.0.1 (Sat May 4, 2013) ~
+
+    * Add |GetLatestVimScripts| support.
 
 1.0.0 (Sat May 4, 2013) ~
 
