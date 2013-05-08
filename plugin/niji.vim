@@ -27,4 +27,4 @@ function s:load()
 	endif
 endfunction
 
-autocmd BufReadPost * nested call s:load()
+autocmd BufNewFile,BufReadPost,FilterReadPost,FileReadPost * nested call s:load()
