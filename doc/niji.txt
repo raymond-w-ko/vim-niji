@@ -1,4 +1,4 @@
-*niji.txt*                           Yet another fork of RainbowParenthsis.vim
+*niji.txt*                              Yet another rainbow parentheses plugin
 
                        .
                        ****.
@@ -69,20 +69,19 @@ CONTENTS                                                     *niji-contents*
 
 USAGE AND INTRODUCTION                        *niji* *niji-introduction-usage*
 
-虹 [Niji] (Rainbow) is yet aonther fork of John Gilmore's
-`RainbowParenthsis.vim`. It's good for Common Lisp, Scheme and Clojure -- with
-two colour schemes -- out-of-the-box. Just install, and you're good to go. The
-filetypes, matching characters and colours Niji uses are
-completely configurable.
+虹 [Niji] (Rainbow) is yet aonther rainbow parentheses plugin for Vim. It's
+good for Common Lisp, Scheme and Clojure -- with two colour schemes --
+out-of-the-box. Just install, and you're good to go. The filetypes, matching
+characters and colours Niji uses are completely configurable.
 
-Niji builds upon the work of various rainbow parantheses plugins starting with
-`RainbowParenthsis.vim` by John Gilmore, `rainbow_parenthsis.vim` by Martin
-Krischik and Luc Hermitte, and `rainbow_parentheses.vim` by 'kien'. The figure
-below shows the rough history and project pages for these plugins.
+Whilst not a fork, Niji builds upon the work of various rainbow parantheses
+plugins, starting with `RainbowParenthsis.vim` by John Gilmore,
+`rainbow_parenthsis.vim` by Martin Krischik and Luc Hermitte, and
+`rainbow_parentheses.vim` by 'kien'. The figure below shows the rough history
+and project pages for these plugins.
 
-Niji also takes its colour scheme from the Lisp syntax file provided in
-distributions of Vim and written by Dr. Charles E. Campbell, Jr.
-(http://mysite.verizon.net/astronaut/vim/index.html#vimlinks_syntax).
+Niji also takes its default colour scheme from the Lisp syntax file provided
+in distributions of Vim and written by Dr. Charles E. Campbell, Jr.
 
          `Niji` by Alastair Touw
     o    May 6, 2013.
@@ -107,7 +106,7 @@ distributions of Vim and written by Dr. Charles E. Campbell, Jr.
 CONTRIBUTIONS                                           *niji-contributions*
 
 If you feel that Niji can be improved, pull requests and issues are
-appreciated and humbly requested on its Github
+appreciated and humbly requested on the Github
 project page (http://github.com/amdt/vim-niji).
 
 
@@ -181,7 +180,7 @@ CONFIGURATION                                           *niji-configuration*
 
 'g:loaded_niji'                                              *'loaded_niji'*
 
-Set to a non-0 value to disable Niji, for example:
+To disable Niji, just define this variable, for example:
 >
     let g:loaded_niji = 1
 <
@@ -203,7 +202,7 @@ You can override this setting by defining your own, for example:
 
 'g:niji_match_all_filetypes'                    *'niji_match_all_filetypes'*
 
-If you want Niji to load for all filetypes, just set the following:
+If you want Niji to load for all filetypes, just define this variable:
 >
     let g:niji_match_all_filetypes = 1
 <
@@ -225,6 +224,9 @@ You can override this setting by defining your own, for example:
                                     \ ['<', '>']]
 <
 
+Note that you need to backslash escape square brackets ('[' and ']').
+
+
 'g:niji_dark_colours' &                                *'niji_dark_colours'*
 'g:niji_light_colours'                                *'niji_light_colours'*
 
@@ -245,7 +247,7 @@ Note that your outer-most parenthesis colour comes first, and the inner-most
 parenthesis colour comes last.
 
 You can define as few or as many as you like, and Niji will cycle through each
-of them as the nesting of your S-expressions increases.
+of them as the nesting of your expressions increases.
 
 If you want to use the same colours for both light and dark backgrounds, you
 could do the following:
@@ -257,10 +259,11 @@ could do the following:
 
 Note the British spelling of 'colour'.
 
+
 'g:niji_use_kien_colours'                          *'niji_use_kien_colours'*
 
-Set to a non-0 value to use the colour scheme available in 'kien's
-`rainbow_parentheses.vim`:
+Define this variable to use the colour scheme available in
+'kien's `rainbow_parentheses.vim`:
 >
     let g:niji_use_kien_colours
 <
@@ -270,11 +273,11 @@ Note the British spelling of 'colour'.
 
 VERSION HISTORY                                       *niji-version-history*
 
-Niji follows the Semantic Versioning Specification (http://semver.org)
+Niji follows the Semantic Versioning Specification (http://semver.org).
 
 1.0.0 (Sat May 4, 2013) ~
 
-    - Initial release.
+    * Initial release.
 
 
 KNOWN ISSUES                                             *niji-known-issues*
