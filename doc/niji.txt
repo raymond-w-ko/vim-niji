@@ -153,7 +153,7 @@ Once loaded in Vim, run the following two commands:
 
 Manually:                                         *niji-installation-manual*
 
-Copy the files in the archive into your 'runtimepath' as per the
+Copy the files in the archive into your |'runtimepath'| as per the
 following figure. The directory tree for Niji is on the left, and the
 resulting tree in your own home directory on the right:
 
