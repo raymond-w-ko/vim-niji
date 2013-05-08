@@ -69,7 +69,7 @@ CONTENTS                                                     *niji-contents*
 
 USAGE AND INTRODUCTION                        *niji* *niji-introduction-usage*
 
-虹 [Niji] (Rainbow) is yet aonther rainbow parentheses plugin for Vim. It’s
+虹 [Niji] (Rainbow) is yet another rainbow parentheses plugin for Vim. It’s
 good for Common Lisp, Scheme and Clojure -- with two colour schemes --
 out-of-the-box. Just install, and you’re good to go. The filetypes, matching
 characters and colours Niji uses are completely configurable.
@@ -143,7 +143,7 @@ Using Vimball:                                   *niji-installation-vimball*
 
 Open the Vimball with Vim. For example, from a UNIX shell you might run:
 >
-    vim vim-niji.vba
+    vim vim-niji.vbm
 <
 Once loaded in Vim, run the following two commands:
 >
