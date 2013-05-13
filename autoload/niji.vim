@@ -1,5 +1,5 @@
 "
-" vim-niji - Yet another fork of RainbowParenthsis.vim
+" vim-niji - Yet another rainbow parentheses plugin.
 "
 "  Maintainer: Alastair Touw <alastair@touw.me.uk>
 "     Website: http://github.com/amdt/vim-niji
