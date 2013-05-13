@@ -15,7 +15,9 @@ Screenshot
 
 ![vim-niji highlighting some Clojure.](https://dl.dropboxusercontent.com/u/25248920/vim-niji.png)
 
-Niji highliting some Clojure code [from the Leiningen project](https://github.com/technomancy/leiningen/blob/master/src/leiningen/new.clj).
+Niji highlighting the parentheses of some Clojure code [from the Leiningen project](https://github.com/technomancy/leiningen/blob/master/src/leiningen/new.clj).
+The `colorscheme` is [Ethan Schoonover's Solarized](http://ethanschoonover.com/solarized)
+and the keyword highlighting is provided by [the static runtime files](https://github.com/guns/vim-clojure-static) from [Meikel Brandmeyer's VimClojure](http://www.vim.org/scripts/script.php?script_id=2501)
 
 Installation
 ------------
