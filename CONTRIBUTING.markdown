@@ -6,4 +6,4 @@ please) and issues are appreciated and humbly requested, on the GitHub project
 page: http://github.com/amdt/vim-niji
 
 For known issues (and to report your own), please see the issue tracker on the
-GitHub project page: http://github.com/amdt/sunset/issues
+GitHub project page: https://github.com/amdt/vim-niji/issues
