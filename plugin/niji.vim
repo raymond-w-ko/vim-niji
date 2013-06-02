@@ -1,11 +1,11 @@
 "
-" vim-niji - Yet another fork of RainbowParenthsis.vim
+" vim-niji - Yet another rainbow parentheses plugin.
 "
 "  Maintainer: Alastair Touw <alastair@touw.me.uk>
 "     Website: http://github.com/amdt/vim-niji
 "     License: Distributed under the same terms as Vim. See ':h license'.
-"     Version: 1.0.1
-" Last Change: 2013 May 8
+"     Version: 1.0.2
+" Last Change: 2013 Jun 02
 "       Usage: See 'doc/niji.txt' or ':help niji' if installed.
 "
 " Niji follows the Semantic Versioning specification (http://semver.org).
@@ -20,11 +20,12 @@ if exists("g:loaded_niji")
 endif
 let g:loaded_niji = 1
 
-let s:matching_filetypes = ['lisp', 'scheme', 'clojure']
-let s:matching_filetypes = exists('g:niji_matching_filetypes') ? g:niji_matching_filetypes : s:matching_filetypes
+if !exists('g:niji_matching_filetypes')
+	let g:niji_matching_filetypes = ['lisp', 'scheme', 'clojure']
+endif
 
 function s:load()
-	if count(s:matching_filetypes, &ft) > 0 || exists('g:niji_match_all_filetypes')
+	if count(g:niji_matching_filetypes, &ft) > 0 || exists('g:niji_match_all_filetypes')
 		call niji#highlight()
 	endif
 endfunction

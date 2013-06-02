@@ -34,11 +34,11 @@ FRONT MATTER                                             *niji-front-matter*
 
      Maintainer: Alastair Touw <alastair@touw.me.uk>
         License: Distributed under the same terms as Vim. See |license|.
-        Version: 1.0.1
-    Last Change: 2013 May 8
+        Version: 1.0.2
+    Last Change: 2013 Jun 02
 
 
-LICENSE                                                     *sunset-license*
+LICENSE                                                       *niji-license*
 
 Niji is distributed under the same terms as Vim itself. See |license|
 for details.
@@ -50,12 +50,11 @@ CONTENTS                                                     *niji-contents*
      ii. License  . . . . . . . . . . . . . . . . . . . . . . |niji-license|
     iii. Contents . . . . . . . . . . . . . . . . . . . . .  |niji-contents|
       1. Usage & Introduction . . . . . . . . . .  |niji-introduction-usage|
-      2. Contributions  . . . . . . . . . . . . . . . . |niji-contributions|
-      3. Installation . . . . . . . . . . . . . . . . .  |niji-installation|
+      2. Installation . . . . . . . . . . . . . . . . .  |niji-installation|
            a) With a Plugin Manager . . . |niji-installation-plugin-manager|
            b) Using Vimball . . . . . . . . . .  |niji-installation-vimball|
            c) Manually  . . . . . . . . . . . . . |niji-installation-manual|
-      4. Configuration  . . . . . . . . . . . . . . . . |niji-configuration|
+      3. Configuration  . . . . . . . . . . . . . . . . |niji-configuration|
            a) ‘g:loaded_niji’ .     . . . . . . . . . . . .  |'loaded_niji'|
            b) ‘g:niji_matching_filetypes’ . . .  |'niji_matching_filetypes'|
            c) ‘g:niji_match_all_filetypes’  . . |'niji_match_all_filetypes'|
@@ -63,8 +62,10 @@ CONTENTS                                                     *niji-contents*
            e) ‘g:niji_dark_colours’ & . . . . . . . .  |'niji_dark_colours'|
               ‘g:niji_light_colours’  . . . . . . . . |'niji_light_colours'|
            f) ‘g:niji_use_legacy_colours’ . . .  |'niji_use_legacy_colours'|
-      5. Version History  . . . . . . . . . . . . . . |niji-version-history|
-      6. Known Issues . . . . . . . . . . . . . . . . .  |niji-known-issues|
+      4. Credit Where It’s Due  . . . . . . . . . . . . . . . |niji-credits|
+      5. Contributions  . . . . . . . . . . . . . . . . |niji-contributions|
+      6. Version History  . . . . . . . . . . . . . . |niji-version-history|
+      7. Known Issues . . . . . . . . . . . . . . . . .  |niji-known-issues|
 
 
 USAGE AND INTRODUCTION                        *niji* *niji-introduction-usage*
@@ -73,41 +74,6 @@ USAGE AND INTRODUCTION                        *niji* *niji-introduction-usage*
 good for Common Lisp, Scheme and Clojure -- with two colour schemes --
 out-of-the-box. Just install, and you’re good to go. The filetypes, matching
 characters and colours Niji uses are completely configurable.
-
-Whilst not a fork, Niji builds upon the work of various rainbow parantheses
-plugins, starting with `RainbowParenthsis.vim` by John Gilmore,
-`rainbow_parenthsis.vim` by Martin Krischik and Luc Hermitte, and
-`rainbow_parentheses.vim` by ‘kien’. The figure below shows the rough history
-and project pages for these plugins.
-
-Niji also takes its default colour scheme from the Lisp syntax file provided
-in distributions of Vim and written by Dr. Charles E. Campbell, Jr.
-
-         `Niji` by Alastair Touw
-    o    May 6, 2013.
-    |    (http://github.com/amdt/vim-niji)
-    |\
-    | |  `rainbow_parentheses.vim` by ‘kien’
-    o |  October 12, 2011.
-    | |  (https://github.com/kien/rainbow_parentheses.vim)
-    | |
-    | o  `Lisp.vim` by Dr. Charles E. Campbell, Jr.
-    |    November 16, 2010.
-    |
-    |    `rainbow_parenthsis.vim` by Martin Krischik & Luc Hermitte
-    o    May 25, 2006.
-    |    (http://www.vim.org/scripts/script.php?script_id=1561)
-    |
-    |    `RainbowParenthsis.vim` by John Gilmore
-    o    March 5, 2005.
-         (http://www.vim.org/scripts/script.php?script_id=1230)
-
-
-CONTRIBUTIONS                                           *niji-contributions*
-
-If you feel that Niji can be improved, pull requests and issues are
-appreciated and humbly requested on the Github
-project page (http://github.com/amdt/vim-niji).
 
 
 INSTALLATION                                             *niji-installation*
@@ -271,9 +237,51 @@ parentheses scripts by ‘kien’, Martin Krischik, Luc Hermitte and John Gilmor
 Note the British spelling of ‘colour’.
 
 
+CREDIT WHERE IT IS DUE                                         *niji-credits*
+
+Whilst not a fork, Niji builds upon the work of various rainbow parantheses
+plugins, starting with `RainbowParenthsis.vim` by John Gilmore,
+`rainbow_parenthsis.vim` by Martin Krischik and Luc Hermitte, and
+`rainbow_parentheses.vim` by ‘kien’. The figure below shows the rough history
+and project pages for these plugins.
+
+Niji also takes its default colour scheme from the Lisp syntax file provided
+in distributions of Vim and written by Dr. Charles E. Campbell, Jr.
+
+         `Niji` by Alastair Touw
+    o    May 6, 2013.
+    |    (http://github.com/amdt/vim-niji)
+    |\
+    | |  `rainbow_parentheses.vim` by ‘kien’
+    o |  October 12, 2011.
+    | |  (https://github.com/kien/rainbow_parentheses.vim)
+    | |
+    | o  `Lisp.vim` by Dr. Charles E. Campbell, Jr.
+    |    November 16, 2010.
+    |
+    |    `rainbow_parenthsis.vim` by Martin Krischik & Luc Hermitte
+    o    May 25, 2006.
+    |    (http://www.vim.org/scripts/script.php?script_id=1561)
+    |
+    |    `RainbowParenthsis.vim` by John Gilmore
+    o    March 5, 2005.
+         (http://www.vim.org/scripts/script.php?script_id=1230)
+
+
+CONTRIBUTIONS                                           *niji-contributions*
+
+If you feel that Niji can be improved, pull requests and issues are
+appreciated and humbly requested on the Github
+project page (http://github.com/amdt/vim-niji).
+
+
 VERSION HISTORY                                       *niji-version-history*
 
 Niji follows the Semantic Versioning Specification (http://semver.org).
+
+1.0.2 (Sun June 2, 2013) ~
+
+    * Improve documentation.
 
 1.0.1 (Sat May 4, 2013) ~
 
