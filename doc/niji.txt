@@ -38,7 +38,7 @@ FRONT MATTER                                             *niji-front-matter*
     Last Change: 2013 May 8
 
 
-LICENSE                                                     *sunset-license*
+LICENSE                                                       *niji-license*
 
 Niji is distributed under the same terms as Vim itself. See |license|
 for details.
