@@ -34,8 +34,8 @@ FRONT MATTER                                             *niji-front-matter*
 
      Maintainer: Alastair Touw <alastair@touw.me.uk>
         License: Distributed under the same terms as Vim. See |license|.
-        Version: 1.0.1
-    Last Change: 2013 May 8
+        Version: 1.0.2
+    Last Change: 2013 Jun 02
 
 
 LICENSE                                                       *niji-license*
@@ -278,6 +278,10 @@ project page (http://github.com/amdt/vim-niji).
 VERSION HISTORY                                       *niji-version-history*
 
 Niji follows the Semantic Versioning Specification (http://semver.org).
+
+1.0.2 (Sun June 2, 2013) ~
+
+    * Improve documentation.
 
 1.0.1 (Sat May 4, 2013) ~
 
