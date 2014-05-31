@@ -13,7 +13,7 @@ for details).
 Screenshot
 ----------
 
-![vim-niji highlighting some Clojure.](https://dl.dropboxusercontent.com/u/25248920/vim-niji.png)
+![vim-niji highlighting some Clojure.](http://cl.ly/image/2F02041i2h0g/vim-niji.png)
 
 Niji highlighting the parentheses of some Clojure code [from the Leiningen project](https://github.com/technomancy/leiningen/blob/master/src/leiningen/new.clj).
 The `colorscheme` is [Ethan Schoonover's Solarized](http://ethanschoonover.com/solarized)
