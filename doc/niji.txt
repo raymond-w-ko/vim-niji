@@ -269,6 +269,10 @@ VERSION HISTORY                                       *niji-version-history*
 
 Niji follows the Semantic Versioning Specification (http://semver.org).
 
+1.0.3 (Sun May 31, 2014) ~
+
+    * Remove non-functional ‘g:niji_match_all_filetypes’.
+
 1.0.2 (Sun June 2, 2013) ~
 
     * Improve documentation.
