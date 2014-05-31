@@ -4,13 +4,13 @@
 "  Maintainer: Alastair Touw <alastair@touw.me.uk>
 "     Website: http://github.com/amdt/vim-niji
 "     License: Distributed under the same terms as Vim. See ':h license'.
-"     Version: 1.0.2
-" Last Change: 2013 Jun 02
+"     Version: 1.0.3
+" Last Change: 2014 May 31
 "       Usage: See 'doc/niji.txt' or ':help niji' if installed.
 "
 " Niji follows the Semantic Versioning specification (http://semver.org).
 "
-" GetLatestVimScripts: 4580 20067 vim-niji
+" GetLatestVimScripts: 4580 20261 :AutoInstall: vim-niji
 "
 
 scriptencoding utf-8
@@ -25,7 +25,7 @@ if !exists('g:niji_matching_filetypes')
 endif
 
 function s:load()
-	if count(g:niji_matching_filetypes, &ft) > 0 || exists('g:niji_match_all_filetypes')
+	if count(g:niji_matching_filetypes, &ft) > 0
 		call niji#highlight()
 	endif
 endfunction
