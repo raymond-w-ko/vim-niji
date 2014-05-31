@@ -25,7 +25,7 @@ if !exists('g:niji_matching_filetypes')
 endif
 
 function s:load()
-	if count(g:niji_matching_filetypes, &ft) > 0 || exists('g:niji_match_all_filetypes')
+	if count(g:niji_matching_filetypes, &ft) > 0
 		call niji#highlight()
 	endif
 endfunction
