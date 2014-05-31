@@ -34,8 +34,8 @@ FRONT MATTER                                             *niji-front-matter*
 
      Maintainer: Alastair Touw <alastair@touw.me.uk>
         License: Distributed under the same terms as Vim. See |license|.
-        Version: 1.0.2
-    Last Change: 2013 Jun 02
+        Version: 1.0.3
+    Last Change: 2014 May 31
 
 
 LICENSE                                                       *niji-license*
