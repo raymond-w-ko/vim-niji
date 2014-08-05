@@ -82,15 +82,15 @@ With a Plugin Manager:                    *niji-installation-plugin-manager*
 Vundle: ~
 
 If you don’t already have a preferred manager, I recommend installing Vundle
-(http://github.com/gmarik/vundle). Once done, add the declaration for Niji to
+(http://github.com/gmarik/Vundle.vim). Once done, add the declaration for Niji to
 your `.vimrc`:
 >
-    Bundle 'amdt/vim-niji'
+    Plugin 'amdt/vim-niji'
 <
 
 And install:
 >
-    :BundleInstall
+    :PluginInstall
 <
 
 Pathogen: ~

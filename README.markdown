@@ -25,17 +25,17 @@ Installation
 ### Vundle
 
 If you don’t already have a preferred manager, I recommend installing
-[Vundle](http://github.com/gmarik/vundle). Once done, add the declaration for
+[Vundle](http://github.com/gmarik/Vundle.vim). Once done, add the declaration for
 Niji to your `.vimrc`:
 
 ```vim
-Bundle 'amdt/vim-niji'
+Plugin 'amdt/vim-niji'
 ```
 
 And install:
 
 ```vim
-:BundleInstall
+:PluginInstall
 ```
 
 ### Pathogen
