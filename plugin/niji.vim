@@ -30,4 +30,7 @@ function s:load()
 	endif
 endfunction
 
-autocmd BufNewFile,BufReadPost,FilterReadPost,FileReadPost * nested call s:load()
+augroup niji
+	autocmd!
+	autocmd BufNewFile,BufReadPost,FilterReadPost,FileReadPost * nested call s:load()
+augroup END
