@@ -1,5 +1,5 @@
-Version: 1.0.4  
-Last Change: 2014 Aug 06
+Version: 1.0.5  
+Last Change: 2014 Aug 11
 
 虹
 =
