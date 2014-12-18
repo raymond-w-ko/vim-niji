@@ -34,8 +34,8 @@ FRONT MATTER                                             *niji-front-matter*
 
      Maintainer: Alastair Touw <alastair@touw.me.uk>
         License: Distributed under the same terms as Vim. See |license|.
-        Version: 1.0.5
-    Last Change: 2014 Aug 11
+        Version: 1.0.6
+    Last Change: 2014 Dec 18
 
 
 LICENSE                                                       *niji-license*
@@ -268,6 +268,12 @@ project page (http://github.com/amdt/vim-niji).
 VERSION HISTORY                                       *niji-version-history*
 
 Niji follows the Semantic Versioning Specification (http://semver.org).
+
+1.0.6 (Thu Dec 18, 2014) ~
+
+    * Fix a conflict with ZoomWin
+      (http://www.vim.org/scripts/script.php?script_id=508) where Niji fails
+      to load after zooming a window.
 
 1.0.5 (Mon Aug 11, 2014) ~
 
